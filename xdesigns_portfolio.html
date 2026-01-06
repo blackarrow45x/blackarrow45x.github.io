@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>XDesigns | Graphic Designer & Branding Expert in Nigeria</title>
+  <meta name="description" content="XDesigns by Nwachukwu Chimdiebube Michael – professional graphic design services including logos, branding, flyers, and social media designs." />
+  <meta name="keywords" content="Graphic Designer Nigeria, Logo Design, Branding, Flyers, Social Media Design, XDesigns" />
+  <meta name="author" content="Nwachukwu Chimdiebube Michael" />
+
+  <style>
+    :root{
+      --primary:#7c0a02; /* wine */
+      --accent:#fbbf24; /* gold */
+      --bg:#f8fafc;
+      --text:#1e293b;
+    }
+
+    body.dark{
+      --bg:#020617;
+      --text:#e5e7eb;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+    body{background:var(--bg);color:var(--text);line-height:1.6}
+
+    header{
+      background:var(--primary);
+      color:#fff;
+      text-align:center;
+      padding:3rem 1rem;
+    }
+
+    /* Animated intro */
+    .typewriter{
+      overflow:hidden;
+      white-space:nowrap;
+      border-right:3px solid var(--accent);
+      width:0;
+      animation:typing 2.5s steps(20,end) forwards,blink .7s infinite;
+      margin:auto;
+    }
+    @keyframes typing{to{width:100%}}
+    @keyframes blink{50%{border-color:transparent}}
+
+    .fade-in{
+      opacity:0;
+      animation:fade 2s ease forwards;
+      animation-delay:2.5s;
+    }
+    @keyframes fade{to{opacity:1}}
+
+    nav{
+      background:#020617;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:1.5rem;
+      padding:1rem;
+    }
+    nav a, nav button{
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+      background:none;
+      border:none;
+      cursor:pointer;
+    }
+    nav a:hover, nav button:hover{color:var(--accent)}
+
+    section{max-width:1100px;margin:auto;padding:3rem 1.5rem}
+    h2{margin-bottom:1.5rem;color:var(--primary)}
+
+    /* About */
+    .about{
+      display:grid;
+      grid-template-columns:1fr 2fr;
+      gap:2rem;
+      align-items:center;
+    }
+    .about img{
+      width:100%;
+      border-radius:14px;
+      box-shadow:0 10px 25px rgba(0,0,0,.2);
+    }
+
+    /* Cards */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:1.5rem;
+    }
+    .card{
+      background:#fff;
+      padding:1.5rem;
+      border-radius:14px;
+      box-shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+    body.dark .card{background:#020617}
+
+    /* Portfolio */
+    .portfolio img{
+      width:100%;
+      border-radius:12px;
+      cursor:pointer;
+    }
+
+    /* Contact */
+    .contact{
+      background:var(--primary);
+      color:#fff;
+      padding:2rem;
+      border-radius:18px;
+    }
+    .contact a{color:var(--accent);text-decoration:none;font-weight:bold}
+
+    footer{
+      text-align:center;
+      padding:1.5rem;
+      background:#020617;
+      color:#94a3b8;
+    }
+
+    /* Lightbox */
+    #lightbox{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.85);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:1000;
+    }
+    #lightbox img{
+      max-width:90%;
+      max-height:90%;
+      border-radius:12px;
+    }
+
+    /* WhatsApp */
+    .whatsapp-float{
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      background:#25D366;
+      color:#fff;
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:28px;
+      text-decoration:none;
+      box-shadow:0 10px 25px rgba(0,0,0,.25);
+      z-index:999;
+    }
+
+    @media(max-width:768px){
+      .about{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1 class="typewriter">XDesigns</h1>
+  <p class="fade-in">Creative Graphic Design & Visual Branding</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+  <button id="toggleTheme">🌙</button>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about">
+    <img src="CHIMDI  (2).png" alt="Nwachukwu Chimdiebube Michael">
+    <div>
+      <p><strong>Nwachukwu Chimdiebube Michael</strong> is a creative graphic designer with over <strong>3 years of experience</strong> in branding, logo design, flyers, and social media visuals.</p>
+      <p>I pay close attention to client details and deliver designs that communicate clearly and stand out professionally.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">Logo Design</div>
+    <div class="card">Brand Identity</div>
+    <div class="card">Flyers & Posters</div>
+    <div class="card">Social Media Designs</div>
+    <div class="card">Print Design</div>
+    <div class="card">UI Graphics</div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="grid portfolio">
+    <div class="card">
+      <img src="Open Day.png" onclick="openLightbox(this.src)">
+      <p><strong>Event Flyer</strong></p>
+    </div>
+    <div class="card">
+      <img src="Red White Green Playful Illustrated Merry Christmas Instagram Post.png" onclick="openLightbox(this.src)">
+      <p><strong>Seasonal Design</strong></p>
+    </div>
+    <div class="card">
+      <img src="Black Vintage Gothic Grunge Esoteric Shop Logo.png" onclick="openLightbox(this.src)">
+      <p><strong>Logo Design</strong></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <p>📧 <a href="mailto:mikebube45@gmail.com">mikebube45@gmail.com</a></p>
+    <p>📱 <a href="https://wa.me/2347066751785">07066751785</a></p>
+    <p>📸 <a href="https://instagram.com/XDES_IGNS" target="_blank">@XDES_IGNS</a></p>
+    <p>🌍 Nigeria | Available for remote work</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 XDesigns. All Rights Reserved.
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/2347066751785" class="whatsapp-float" target="_blank">💬</a>
+
+<script>
+  document.getElementById('toggleTheme').onclick = () =>
+    document.body.classList.toggle('dark');
+
+  function openLightbox(src){
+    document.getElementById('lightbox').style.display='flex';
+    document.getElementById('lightbox-img').src=src;
+  }
+  function closeLightbox(){
+    document.getElementById('lightbox').style.display='none';
+  }
+</script>
+
+</body>
+</html>
